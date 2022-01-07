@@ -1,0 +1,400 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    outline    : none;
+}
+
+.G-container {
+    max-width : 1200px;
+    width     : 100%;
+    padding   : 0 15px;
+    margin    : 0 auto;
+}
+
+.P-section-general {
+    position   : fixed;
+    width      : 100%;
+    top        : 0;
+    left       : 0;
+    z-index    : 1000;
+    transition : 0.5s;
+
+}
+
+.p-general-box {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+}
+
+.P-animation-header {
+    background-color : rgb(255, 255, 255);
+    box-shadow       : 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.P-animation-header .p-menu ul li, .P-animation-header .p-general-delex a {
+    color : black;
+}
+
+.p-menu ul {
+    display    : flex;
+    list-style : none;
+
+}
+
+.p-menu ul li {
+    color         : white;
+    font-size     : 14px;
+    padding-right : 15px;
+    transition    : 0.3s;
+}
+
+.p-general-delex {
+    padding     : 30px 15px;
+    font-size   : 22px;
+    font-family : 'Kameron', serif;
+}
+
+.p-general-delex a {
+    text-decoration : none;
+    color           : #ffffff;
+    transition      : 0.3s;
+}
+
+.p-general-pic {
+    background-size : cover;
+    width           : 100%;
+    height          : 580px;
+    position        : relative;
+    display: flex;
+    align-items: center;
+}
+
+.p-general-pic::after {
+    position         : absolute;
+    content          : '';
+    width            : 100%;
+    height           : 100%;
+    left             : 0;
+    top              : 0;
+    background-color : rgba(0, 0, 0, 0.5);
+}
+
+.p-pic-info {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    text-align     : center;
+    content        : '';
+    color          : white;
+    position       : relative;
+    z-index        : 2;
+    letter-spacing : 1px;
+}
+
+.p-pic-info h1 {
+    font-size     : 36px;
+    margin-bottom : 20px;
+}
+
+.p-pic-info p {
+    padding   : 3px;
+    font-size : 16px;
+    color     : #cacaca;
+}
+
+.G-button {
+    margin-top       : 20px;
+    background-color : #00bc95;
+    border           : none;
+    color            : white;
+    cursor           : pointer;
+    padding          : 15px 25px;
+    border-radius    : 3px;
+}
+
+.G-button:hover {
+    background-color : rgb(99, 99, 99);
+}
+
+.P-title-line {
+    width            : 50px;
+    height           : 2px;
+    background-color : #00bc95;
+    position         : relative;
+    display          : block;
+}
+
+.P-title-line:before {
+    position         : absolute;
+    content          : '';
+    width            : 100%;
+    height           : 2px;
+    background-color : #cacaca;
+    top              : 0;
+    left             : 105%;
+}
+
+.P-title-line:after {
+    position         : absolute;
+    content          : '';
+    width            : 100%;
+    height           : 2px;
+    background-color : #cacaca;
+    top              : 0;
+    right            : 105%;
+}
+
+.G-title {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+}
+
+.P-section-services {
+    padding : 80px 0;
+}
+
+.G-title h1 {
+    margin-top    : 20px;
+    margin-bottom : 10px;
+}
+
+.P-list-box {
+    display    : flex;
+    flex-wrap  : wrap;
+    text-align : center;
+}
+
+.p-box {
+    width   : 33.3%;
+    padding : 40px 20px;
+}
+
+.p-box h5 {
+    margin : 20px 0;
+}
+
+.P-section-pic {
+    margin-bottom         : 80px;
+    width                 : 100%;
+    height                : 320px;
+    display: flex;
+    align-items: center;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    position              : relative;
+}
+
+.P-section-pic::after {
+    position         : absolute;
+    content          : '';
+    width            : 100%;
+    height           : 100%;
+    left             : 0;
+    top              : 0;
+    background-color : rgba(0, 0, 0, 0.5);
+}
+
+.p-forms {
+    display    : flex;
+    margin-top : 40px;
+}
+
+label {
+    display : block;
+}
+
+.p-form-group {
+
+    display   : flex;
+    flex-wrap : wrap;
+    width     : 100%;
+}
+
+.G-input {
+    width   : 50%;
+    padding : 15px;
+}
+
+.G-input label {
+    display : block;
+    width   : 100%;
+}
+
+.G-input input {
+    width     : 100%;
+    height    : 40px;
+    padding   : 0 15px;
+    font-size : 16px;
+    outline   : none;
+}
+
+.G-input textarea {
+    width     : 100%;
+    height    : 100px;
+    padding   : 15px;
+    font-size : 16px;
+    outline   : none;
+    resize    : none;
+}
+
+.G-input.P-width-100 {
+    width : 100%;
+}
+
+.p-section-text {
+    text-align : center;
+    color      : #535353;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.p-section-button {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin          : 10px;
+}
+
+.p-section-button button {
+    background-color : #00bc95;
+    border           : none;
+    border-radius    : 4px;
+    padding          : 12px 25px;
+    cursor           : pointer;
+    color            : white;
+    margin-bottom    : 70px;
+}
+
+.p-section-button button:hover {
+    background-color : #535353;
+}
+
+.P-footer-info {
+    background-color : #f7f7f7;
+    padding          : 70px 0;
+}
+
+.p-footer-info {
+    display         : flex;
+    justify-content : center;
+    align-items     : flex-start;
+}
+
+.p-footer-box {
+    width      : 33%;
+    text-align : center;
+    color      : #535353;
+}
+
+.p-footer-box p {
+    margin : 10px 0;
+}
+
+.p-footer-box-in p{
+    text-align:inherit;
+}
+
+.p-footer-box button {
+    background-color : #00bc95;
+    border           : none;
+    border-radius    : 4px;
+    padding          : 10px 20px;
+    cursor           : pointer;
+    color            : white;
+}
+
+.p-footer-box button:hover {
+    background-color : #535353;
+}
+
+.p-footer-last {
+    background-color : black;
+    color            : #737373;
+    text-align       : center;
+    padding          : 20px 0;
+}
+
+.pic-info {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    text-align     : center;
+    color          : white;
+    position       : relative;
+    z-index        : 2;
+    letter-spacing : 1px;
+    max-width          : 750px;
+    margin: 0 auto;
+}
+
+.pic-info h5 p {
+    font-size : 14px;
+}
+
+.pic-info p {
+    color : #00bc95;
+}
+
+.p-box-icon {
+    font-size : 48px;
+}
+
+.P-burger{
+    display: none;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #737373;
+}
+a:hover {
+    color: #00bc95;
+}
+
+/*@media (max-width: 1200px){*/
+/*    body{*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 991px){*/
+/*    body{*/
+/*        background-color: green;*/
+/*    }*/
+/*}*/
+
+
+/*@media (min-width: 1990px){*/
+/*    body{*/
+/*        background-color: yellow;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1200px) and (min-width: 991px){*/
+/*    body{*/
+/*        background-color: #00bc95;*/
+/*    }*/
+
+/*    .G-title h1{*/
+/*        font-size: 16px;*/
+/*    }*/
+/*}*/
+
+
+/*@media (max-width: 991px) and (min-width: 767px){*/
+/*    body{*/
+/*        background-color: #00bc95;*/
+/*    }*/
+
+/*    .G-title h1{*/
+/*        font-size: 16px;*/
+/*    }*/
+/*}*/

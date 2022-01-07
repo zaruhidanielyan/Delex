@@ -1,0 +1,57 @@
+@media (max-width : 1200px) {
+
+
+}
+
+
+@media (max-width : 991px) {
+
+
+}
+
+@media (max-width : 767px) {
+    .p-pic-info h1{
+        font-size: 30px;
+    }
+    .p-box{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width : 576px) {
+
+    .p-menu{
+        display: none;
+    }
+    .P-burger{
+        display: block;
+    }
+    .p-pic-info h1{
+        font-size: 24px;
+    }
+    .p-box{
+        width: 100%;
+        padding: 15px;
+    }
+    .p-form-group {
+        display: block;
+    }
+    .G-input {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .p-footer-box {
+        margin-top: 25px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .p-footer-box button{
+        padding: 5px 10px;
+    }
+    
+    .p-footer-info {
+        display: block;
+        margin: 0 auto;
+    }
+}
